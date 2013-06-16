@@ -31,3 +31,9 @@ hash2mysql.pl
 ###############
 
     Take a hash and pass it to this function to dynamically generate the insert or the update for that table
+
+###############
+DbixConnector.pm
+###############
+ 
+    Plugin for mojolicious to use DBIx::Connector for handling DBI connections when forking
