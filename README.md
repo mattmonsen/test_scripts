@@ -37,3 +37,9 @@ DbixConnector.pm
 ###############
  
     Plugin for mojolicious to use DBIx::Connector for handling DBI connections when forking
+
+###############
+crypt.pl
+###############
+
+    Validate a user from a password stored in a db using the encrypt method provided
