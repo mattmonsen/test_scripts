@@ -43,3 +43,9 @@ crypt.pl
 ###############
 
     Validate a user from a password stored in a db using the encrypt method provided
+
+###############
+csv.pl
+###############
+
+    Load any csv file in, dynamically get the headers, and dump out each row as it is read in
