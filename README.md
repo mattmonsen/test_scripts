@@ -49,3 +49,10 @@ csv.pl
 ###############
 
     Load any csv file in, dynamically get the headers, and dump out each row as it is read in
+
+
+###############
+authentication.pl
+###############
+
+    Using the authentication plugin for Mojolicious
