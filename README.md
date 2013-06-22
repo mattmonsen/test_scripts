@@ -56,3 +56,9 @@ authentication.pl
 ###############
 
     Using the authentication plugin for Mojolicious
+
+###############
+arrayref_to_hashref.pl
+###############
+
+    Convert arrayref of hashrefs to a hashref of arrayrefs from a value in a key from the hashrefs
