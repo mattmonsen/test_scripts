@@ -62,3 +62,9 @@ arrayref_to_hashref.pl
 ###############
 
     Convert arrayref of hashrefs to a hashref of arrayrefs from a value in a key from the hashrefs
+
+###############
+filter.pl
+###############
+
+    Examples of using map/grep/sort
