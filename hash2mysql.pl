@@ -33,11 +33,12 @@ sub hash2mysql {
 sub insert {
     my $self = shift;
     my $args = shift || return undef;
+    my $table = shift || 'DEFAULT_TABLE';
     my ($fields, $values) = $self->hash2mysql($args);
     my $field_string = '(' . join(', ', @$fields) . ')';
     my $value_string = '(' . join(', ', map({ '?' } @$fields)) . ')';
     my $sql = qq{
-        INSERT INTO TABLE
+        INSERT INTO $table
             $field_string
         VALUES
             $value_string
@@ -50,11 +51,12 @@ sub insert {
 sub update {
     my $self = shift;
     my $args = shift || return undef;
+    my $table = shift || 'DEFAULT_TABLE';
     my $id = delete $args->{'id'} || return undef;
     my ($fields, $values) = $self->hash2mysql($args);
     my $update_string = join(",\n", map { "$_ = ?" } @$fields);
     my $sql = qq{
-        UPDATE TABLE 
+        UPDATE $table 
            SET $update_string
          WHERE id = ?
     };
