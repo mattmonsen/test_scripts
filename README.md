@@ -68,3 +68,9 @@ filter.pl
 ###############
 
     Examples of using map/grep/sort
+
+###############
+multi_line_strings.pl
+###############
+
+    Examples of mulit-line strings using here-documents and qq
