@@ -1,6 +1,13 @@
 #!/usr/bin/perl
 
+use warnings;
+use strict;
+
+use feature 'say';
+use List::Util qw(reduce);
+
 my @odds;
+my @filtered;
 
 foreach ( qw( a b c d e ) ) {
     push @filtered, $_
@@ -42,7 +49,8 @@ my @ords = map { ord $_ } qw( a b c d e );
 say map { ord } qw( a b c d e );
 
 # sum an array
-$sum = reduce { $a + $b } @numbers;
+my $sum = reduce { our ( $a, $b ); $a + $b } 1 .. 10;
+say $sum;
 
 # List::MoreUtils
 # any
@@ -51,3 +59,7 @@ $sum = reduce { $a + $b } @numbers;
 # part
 # natatime
 
+my @values = ( 'a', 'b', 'c' );
+my $ignore = join ',', map { "'$_'" } @values;
+
+say $ignore;
