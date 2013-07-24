@@ -30,7 +30,8 @@ ports.pl
 hash2mysql.pl
 ###############
 
-    Take a hash and pass it to this function to dynamically generate the insert or the update for that table
+    Take a hash and pass it to this function to dynamically generate the insert 
+    or the update for that table
 
 ###############
 DbixConnector.pm
@@ -49,7 +50,6 @@ csv.pl
 ###############
 
     Load any csv file in, dynamically get the headers, and dump out each row as it is read in
-
 
 ###############
 authentication.pl
@@ -70,14 +70,14 @@ filter.pl
     Examples of using map/grep/sort
 
 ###############
-<<<<<<< HEAD
 dbi_reconnect.pl
 ###############
 
-    Daemon example of how to keep retrying to connect to DBI if the connection goes away or dies for some reason
-=======
+    Daemon example of how to keep retrying to connect to DBI if the connection goes away 
+    or dies for some reason
+
+###############
 multi_line_strings.pl
 ###############
 
     Examples of mulit-line strings using here-documents and qq
->>>>>>> 1b296175ad506a735ea291873ba32df2a78bf487
