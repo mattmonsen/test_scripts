@@ -68,3 +68,9 @@ filter.pl
 ###############
 
     Examples of using map/grep/sort
+
+###############
+dbi_reconnect.pl
+###############
+
+    Daemon example of how to keep retrying to connect to DBI if the connection goes away or dies for some reason
