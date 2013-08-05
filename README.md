@@ -81,3 +81,9 @@ multi_line_strings.pl
 ###############
 
     Examples of mulit-line strings using here-documents and qq
+
+###############
+datetime.pl
+###############
+
+    Examples of parsing a datetime string and setting the timezone
