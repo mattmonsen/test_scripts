@@ -87,3 +87,9 @@ datetime.pl
 ###############
 
     Examples of parsing a datetime string and setting the timezone
+
+###############
+unique.pl
+###############
+
+    Examples of how to unique a list
